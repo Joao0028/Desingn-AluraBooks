@@ -1,0 +1,149 @@
+.carrossel__titulo{
+    color: var(--laranja-check);
+    background-color: var(--branco);
+    font-family: var(--fonte-principal);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 1em 0 0.5em 0;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    display: none;
+}
+
+.swiper-pagination{
+    position: initial;
+    margin: 1em 0;
+}
+
+.card__descricao{
+    font-family: var(--fonte-principal);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.card__botoes{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0px;
+}
+
+.descricao__titulo{
+    color: var(--laranja-check);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.botoes{
+    display: flex;
+}
+
+.card{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+}
+
+.botoes__ancora{
+    background: var(--laranja-check);
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+    padding: 8px 16px;
+    width: 129px;
+    height: 33px;
+    justify-content: center;
+}
+
+.descricao-titulo__livro{
+    color: #002F52;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+.descricao__texto{
+    font-size: 14px;
+}
+
+@media screen and (min-width: 1024px){
+
+    /*carrossel*/
+    .carrossel__titulo{
+        font-size: 24px;
+    }
+    .swiper-pagination{
+        margin: 2em 0 3em 0 ;
+    }
+    .swiper{
+        width: 60%;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        display: block;
+        top: 62%;
+    }
+
+
+
+
+
+    /*CARD*/
+    .card{
+        margin: 4em auto 3em;
+        padding: 2em;
+        width: 588px;
+    }
+    .descricao__texto{
+        font-size: 16px;
+        margin: 0 5em 0 0;
+        line-height: 24px;
+    }
+    .descricao-titulo__livro{
+        padding: 1em 0;
+    }
+    .botoes__item{
+        margin: 0 -12px;
+        padding: 0 2em 0 0;
+    }
+    /*Card_2*/
+    .card__2{
+        padding: 2em !important;
+        margin: 4em auto 3em !important;
+        width: 588px;
+    }
+    .tres{
+        margin: 0 46px 0 0 !important;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    
+   .englobar{
+    display: flex;
+    margin: 0 20vw 3em 20vw;
+    align-items: center;
+   }
+   .swiper-pagination{
+    margin: 1em 0;
+}
+
+.swiper{
+    margin: 0 5em 0 0;
+    width: 50%;
+}
+}
+
+
+/*MUITO IMPORTANTE - "!important" quando usado no css apos uma aplicacao que o conputador nao seguiu, eo colocar esta tag ao lado ele faz com que  ela se "sobresaia" e os efeitos sejam colocados*/

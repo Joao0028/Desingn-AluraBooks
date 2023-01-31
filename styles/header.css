@@ -1,0 +1,207 @@
+.cabeçalho__menu-hamburguer{
+    width: 28px;
+    height: 28px;
+    background-image: url("../img/Menu.svg");
+    display: inline-block;
+    background-position: center;
+}
+
+.lista__menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60%;
+}
+
+.container__botao:checked ~ .lista__menu{
+    display: block;
+}
+
+.lista-menu__titulo,
+.lista-menu__item{
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.cabeçalho{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    position: relative;
+}
+.container{
+    display: flex;
+}
+
+.container__imagem{
+    padding: 6px;
+    background-repeat: no-repeat;
+}
+
+.im{
+    margin: 0 28px;
+}
+
+.lista-menu__titulo{
+    color: var(--laranja-check);
+    font-size: 16px;
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+.lista-menu__link{
+    color:#002F52;
+    background-clip: text;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+
+
+.container__botao{
+    display: none;
+}
+
+.container__titulo{
+    display: none;
+    margin: auto;
+}
+
+.opcoes{
+    display: none;
+}
+
+.tramp{
+    display: none;
+}
+.containerr__texto{
+    display: none;
+}
+
+
+
+.container__botao:checked ~ .container__rotulo > .cabeçalho__menu-hamburguer {
+ background-image: url("../img/Menu\ Aberto.png");
+}
+.container__botao:checked ~ .container__rotulo{
+    background:#002F52 ;
+    padding: 10px;
+}
+
+.container__rotulo{
+    padding: 10px;
+}
+
+
+@media screen and (min-width:1024px){
+    
+    .opcoes__item:hover {
+        background: #002F52;
+        color: white;
+    }
+    .lista-menu__item:hover{
+        background-color: #002F52;
+    }
+    
+    .lista-menu__item:hover .lista-menu__link{
+        color: white !important;
+    }
+
+    .opcoes__item:hover a {
+        color: white;
+    }
+
+    
+    .container__titulo, .container__titulo--negrito{
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+    }
+    .container__titulo{
+    font-weight: 400;
+    display: block;
+    }
+
+    .container__titulo--negrito{
+        font-weight: 700;
+    }
+
+    .opcoes{
+        display: flex;
+    }
+    .opcoes__item{
+        color: black;
+        padding: 1em;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: var(--fonte-principal);
+    }
+    .opcoes__link{
+        color: black;
+        text-decoration: none;
+    }
+    .transparente{
+        display: none;
+    }
+    .cabeçalho__menu-hamburguer{
+        display: none;
+    }
+   .opcoes__botao:checked ~ .lista__menu{
+    display: block;
+    width: auto;
+   }
+   .opcoes__botao{
+    display: none;
+   }
+}
+
+@media screen and (min-width:1728px) {
+
+    .containerr__texto{
+        display: block;
+        color: black;
+        font-size: 20px;
+        font-family: var(--fonte-principal);
+    }
+    .container__link{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        margin: 0 1em;
+    }
+    .cabeçalho{
+        padding: 0 2em;
+    }
+    .opcoes{
+        margin-right: auto;
+    }
+    .container__titulo{
+        margin: auto 2em auto 0;
+    }
+}
+
+
+
+
+
+/*
+/ Pseudo-classe /	Descrição	/ Exemplo /
+
+:active 	Link que está ativo.	Um link sendo clicado.
+
+:disabled	Elemento desativado.	Um input que não pode ser preenchido.
+
+:focus     	Elemento recebendo foco ao ser selecionado por mouse ou teclado.	Campo de um formulário.
+
+:link   	Cor dos links.	Tag <a> em geral.
+
+:visited	Cor dos links que já foram visitados.	É utilizado em tags <a> mas só aparecem quando já foram clicadas.
+
+*/
+
+/*-webkit-text-fill-color: - quando algum elemento estiver com estilizações para o fundo colorido e quando quiser colocar um hover e não estiver pegando, tenta usar essa tag para mudar a cor do elemento*/
+
+/*SUPER IMPORTANTE - margin-right:auto, ao selecionar um elemento e colocar esta opcao ele vai colar no inicio da pagina sem mover terceiros...*/

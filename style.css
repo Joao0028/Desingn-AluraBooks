@@ -1,0 +1,23 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/segundoB.css");
+@import url("styles/topicos.css");
+@import url("styles/final.css");
+@import url("styles/rodape.css");
+
+
+:root{
+    --cor-de-fundo: #EBECEE;
+    --branco: #FFFFFF;
+    --laranja-check:#EB9B00; 
+    --fonte-principal:"Poppins";
+    --fonte-secundaria:"Josefin Sans";
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+}
+
+/*Sobre o @import url("styles/arquivo.css") - para importar tem que primeiro criar uma pasta para colocar os arquivos "css" e depois colocar o @import url("styles/arquivo.css") no inicio do style, e n~eo esquecer de colocar o ""...*/

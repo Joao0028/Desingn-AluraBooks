@@ -1,0 +1,108 @@
+.topicos{
+    padding: 1em;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+}
+
+.topico__item a{
+    color: white;
+    text-decoration: none;
+    background: var(--laranja-check);
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 1em;
+}
+
+.topicos h2{
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 1em;
+}
+
+.topicos__lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.topico__item{
+    margin: 24px 8px;
+}
+
+@media screen and (min-width: 1024px){
+    
+    .topicos h2{
+        font-size: 24px;
+    }
+    .topicos__lista{
+        padding: 24px 42px;
+    }
+    .topico__item{
+        margin: 3em 1em;
+    }
+    .topico__item a{
+        font-size: 24px;
+        padding: 32px
+    }
+
+    .topicos__lista .topico__item:nth-child(1){
+        order: 1;
+    }
+    .topicos__lista .topico__item:nth-child(2){
+        order: 3;
+    }
+    .topicos__lista .topico__item:nth-child(3){
+        order: 4;
+    }
+    .topicos__lista .topico__item:nth-child(4){
+        order: 5;
+    }
+    .topicos__lista .topico__item:nth-child(5){
+        order: 6;
+    }
+    .topicos__lista .topico__item:nth-child(6){
+        order: 8;
+    }
+    .topicos__lista .topico__item:nth-child(7){
+        order: 2;
+    }
+    .topicos__lista .topico__item:nth-child(8){
+        order: 7;
+    }
+}
+
+@media screen and (min-width: 1720px) {
+     .topicos h2{
+        font-size: 32px;
+     }
+     .topicos__lista{
+        padding: 24px 420px;
+     }
+
+     .topico__item a {
+        padding: 1em;
+     }
+     .topico__item{
+     margin: 40px 14px;
+     }
+}
+
+
+
+/*    .menu__item:nth-child(1){
+        order: 1;
+    }
+    .menu__item:nth-child(2){
+        order: 3;
+    }
+    .menu__item:nth-child(3){
+        order: 4;
+    }
+    .menu__item:nth-child(4){
+        order: 5;
+    }
+    .menu__item:nth-child(5){
+        order: 2;
+    }*/
